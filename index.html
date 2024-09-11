@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" href="topicon.png">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="page flex">
+        <div class="left">
+            <div class="home rounded m-1 p-1 bg-grey">
+                <img src="logo.svg" alt="logo" width="100" class="invert">
+                <div class="twoicons">
+                    <ul>
+                        <li><img src="home.svg" alt="home" title="Home" width="30" class="invert"><span>Home</span></li>
+                        <li><img src="search.svg" alt="search" title="Search" width="30" class="invert"><span class="invert">Search</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="library m-1 p-1 bg-grey">
+                <div class="libraryIcon sticky invert">
+                    <img src="library.svg" alt="library" width="30"><span>Your Library</span>
+                </div>
+                <div class="box">
+                    <div id="box1">
+                        <p class="line1">Create your own Playlist</p>
+                        <p class="line2">Its easy we'll help you</p>
+                        <button type="button">Create Your Playlist</button>
+                    </div>
+                    <div id="box2">
+                        <p class="line1">Lets Find some podocast to follow</p>
+                        <p class="line2">We'll keep you updated on new episodes</p>
+                        <button type="button">Browse podocasts</button>
+                    </div>
+                </div>
+                <div class="songlist">
+                    <ul>
+                        <!-- <li></li> -->
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="header sticky">
+                <div class="arrows"><img src="leftarrow.svg" alt="left" srcset="" class="invert" width="45">
+                    <img src="rightarrow.svg" alt="" srcset="" class="invert" width="45">
+                </div>
+                <div class="logins"><button type="button" id="signin">Sign in</button>
+                    <button type="button" id="login">Login</button>
+                </div>
+            </div>
+            <div class="rightpage gradient">
+                <div class="arr hover">
+                    <img src="arr.jpeg.crdownload" alt="arr" srcset="">
+                    <h3>Arr</h3>
+                    <p>Artist</p>
+                </div>
+                <div class="fav hover">
+                    <img src="like.svg" alt="liked">
+                    <h3>Liked Songs</h3>
+                </div>
+            </div>
+            <div class="playbar invert">
+                <div class="songinfo">
+
+                </div>
+                <div class="functions">
+                    <div class="previous"><img src="previous.svg" alt="" srcset=""></div>
+                    <div class="play"><img src="play.svg" alt="" srcset=""></div>
+                    <div class="next"><img src="next.svg" alt="" srcset=""></div>
+                </div>
+                <div class="seekbar">
+                    <div class="seeker"></div>
+                </div>
+                <div class="songtime">
+                    00:00 00:00
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

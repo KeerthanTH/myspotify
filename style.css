@@ -1,0 +1,280 @@
+/* Custom scrollbar for WebKit browsers */
+::-webkit-scrollbar {
+    width: 11px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 6px; /*Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color of the scrollbar thumb on hover */
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    width: 25vw;
+    height: 98vh;
+    /* margin: 3px 0px; */
+    /* overflow: hidden; */
+}
+.right{
+    width: 75vw;
+    background-color: #121212;
+    height: 97vh;
+    position: relative;
+    border-radius: 9px;
+    margin: 10px 10px 0px 0px;
+}
+.home{
+    height: 135px;
+}
+.home ul li span{
+    filter: invert(1);
+    padding-left: 10px;
+}
+.home span{
+    margin-left: 10px;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+}
+ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.twoicons{
+    padding-top: 8px;
+}
+.twoicons > span>span{
+    padding-top: 5px;
+}
+.twoicons span{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items:center; */
+    /* justify-content: start; */
+    color: black;
+}
+.library{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+    border-radius: 9px;
+    margin: 10px;
+    /* overflow: hidden; */
+
+}
+.libraryIcon{
+    margin-bottom: 25px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+}
+.library span{
+    filter: invert(1);
+    padding-left: 15px;
+}
+.library .line1{
+    font-weight: bolder;
+}
+.library .line2{
+    font-weight: normal;
+}
+.sticky{
+    position: static;
+}
+.box {
+    flex-grow: 1;
+    height: 124px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.box button{
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    width: fit-content;
+}
+#box1{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    border-radius: 9px;
+    margin: 7px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #1F1F1F;
+}
+#box2{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    border-radius: 9px;
+    margin: 7px;
+    margin-top: 24px;
+    padding: 10px;
+    background-color: #1F1F1F;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 30px;
+    height: fit-content;
+    font-size: 11px;
+    color: white;
+    column-gap: 13px;
+    row-gap: 0px;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.right .header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+}
+.right .header button{
+    border-radius: 50px;
+    cursor:not-allowed;
+    padding: 5px;
+    width: fit-content;
+}
+.arrows{
+    cursor: not-allowed;
+}
+#signin{
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin: 10px 3px;
+}
+#login{
+    margin: 10px 4px;
+}
+.arr {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.arr img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+ 
+}
+.rightpage{
+    display: flex;
+    flex-grow: 1;
+}
+.fav img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(45deg,purple,skyblue);
+}
+.fav{
+    text-align: center;
+}
+
+.playbar{
+    /* width: max-content; */
+    width: 100%;
+    /* height: max-content; */
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(117, 111, 111);
+    margin: 0;
+    /* display: flex;
+    justify-content: space-evenly; */
+    align-items: center;
+    border-radius: 25px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.functions{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+.previous , .play , .next{
+    padding: 0 10px;
+}
+.seekbar{
+    height: 4px;
+    width: 98%;
+    background: black;
+    border-radius: 10px;
+    position: absolute;
+    /* bottom: 8px; */
+    top: 0px;
+    margin: 6px;
+    cursor: pointer;
+}
+.songinfo , .songtime{
+    padding: 0 15px;
+    padding-top: 10px;
+    color: white;
+}
+.seeker{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: black;
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.songlist{
+    min-height: 25vh;
+    overflow: auto;
+    margin-top: 20px;
+}
+.songlist ul li{
+    cursor: pointer;
+    /* height: min-content; */
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid white;
+}
